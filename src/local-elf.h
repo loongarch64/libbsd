@@ -120,6 +120,12 @@
 #define ELF_TARG_DATA	ELFDATA2LSB
 #endif
 
+#elif defined(__loongarch__)
+
+#define ELF_TARG_MACH   EM_LOONGARCH
+#define ELF_TARG_CLASS  ELFCLASS64
+#define ELF_TARG_DATA   ELFDATA2LSB
+
 #elif defined(__powerpc__)
 
 #define ELF_TARG_MACH	EM_PPC
